@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku - Play a Game</title>
+    <!-- reference your stylesheet here -->
+    <link rel = "stylesheet" href = "styles/sudoku.css">
+    <!-- reference your source code here -->
+    <script src="scripts/jquery-3.6.3.min.js"></script>
+    <script src="scripts/sudoku.js"></script>
+</head>
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <img src="images/logo.gif" width="50">
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <div class="navbar-item">
+                    <button class="button is-link">Sudoku Center</button>
+                </div>
+                <a class="navbar-item" href="sudoku.html">
+                    <button class="button is-link">Play Game</button>
+                </a>
+                <a class="navbar-item" href="high_scores.html">
+                    <button class="button is-link">High Scores</button>
+                </a>
+            </div>
+
+            <div class="navbar-end">
+                
+            </div>
+        </div>
+    </nav>
+    
+    <!-- table representing the sudoku board -->
+    <table id="gameBoard"></table>
+
+    <div id="buttonWrapper">
+        <table id = "inputButtons" class="user-input">
+            <tr>
+                <td id="but1">1</td>
+                <td id="but2">2</td>
+                <td id="but3">3</td>
+                <td id="but4">4</td>
+                <td id="but5">5</td>
+                <td id="but6">6</td>
+                <td id="but7">7</td>
+                <td id="but8">8</td>
+                <td id="but9">9</td>
+            </tr>
+        </table>
+        <table id="undoButton">
+            <tr>
+                <td id="undo"><img src = "images/undo.png"></td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>

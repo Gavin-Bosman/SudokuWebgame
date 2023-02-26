@@ -1,0 +1,101 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+.navbar {
+    background-color: navy;
+    padding: 5px 5px 5px 5px;
+}
+
+#gameBoard {
+    border: 3px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 25px;
+}
+
+#gameBoard :nth-child(3n) td {
+    border-bottom: 3px solid black;
+}
+
+#gameBoard tr :nth-child(3n) {
+    border-right: 3px solid black;
+}
+
+#gameBoard td {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#gameBoard tr :hover {
+    background-color: #f5dd90;
+}
+
+#buttonWrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 25px;
+    column-gap: 15px;
+}
+
+#inputButtons {
+    border-collapse: collapse;
+}
+
+#inputButtons td {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#inputButtons tr :hover {
+    background-color: #f5dd90;
+}
+
+#undoButton {
+    border: 1px solid black;
+}
+
+#undoButton td{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+#undoButton tr :hover {
+    background-color: #f5dd90;
+}
+
+.user-input {
+    background-color: #f2f2f2;
+}
+
+.error {
+    background-color: #f76c5e;
+}
+
+/* high-scores page: */
+
+#scoreWrapper {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+.grid p, b{
+    text-align: center;
+}
